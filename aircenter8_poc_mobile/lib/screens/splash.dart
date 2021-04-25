@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
 import 'homepage.dart';
+import '../util/constants.dart';
 
 class Splash extends StatefulWidget {
   Splash({Key key}) : super(key: key);
@@ -39,6 +40,14 @@ class _MyHomePageState extends State<Splash> {
             Text(
               "AirCenter 8",
               style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: 20),
+            Text(
+              "Loading..",
+              style: TextStyle(
+                  fontSize: 11,
+                  fontWeight: FontWeight.normal,
+                  color: Colors.amber),
             ),
           ],
         ),
