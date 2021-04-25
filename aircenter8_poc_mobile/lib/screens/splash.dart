@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 import 'core/dashboardPage.dart';
 //import '../util/constants.dart';
@@ -15,7 +16,7 @@ class _MyHomePageState extends State<Splash> {
   @override
   void initState() {
     //set time to load the new page
-    Future.delayed(Duration(seconds: 3), () {
+    Future.delayed(Duration(seconds: 4), () {
       Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (context) => dashboardPage()));
     });
@@ -42,12 +43,22 @@ class _MyHomePageState extends State<Splash> {
               style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 20),
-            Text(
-              "Loading..",
-              style: TextStyle(
+            DefaultTextStyle(
+              style: const TextStyle(
                   fontSize: 11,
                   fontWeight: FontWeight.normal,
                   color: Colors.amber),
+              child: AnimatedTextKit(
+                animatedTexts: [
+                  TypewriterAnimatedText(
+                    'One stop tool for travel industry',
+                    speed: const Duration(milliseconds: 100),
+                  ),
+                ],
+                onTap: () {
+                  print("Tap Event");
+                },
+              ),
             ),
           ],
         ),

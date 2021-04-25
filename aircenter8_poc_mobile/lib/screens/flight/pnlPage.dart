@@ -8,7 +8,7 @@ class pnlPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
         appBar: AppBar(
-          title: Text("Passenger Name list"),
+          title: Text("Passenger Name List"),
         ),
         drawer: navigationDrawer(),
         body: Center(child: Text("Here comes pax list of a flight")));
