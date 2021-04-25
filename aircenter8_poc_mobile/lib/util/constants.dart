@@ -1,3 +1,5 @@
 import 'package:flutter/material.dart';
 
-const color = const Color(0xff3490dc);
+const kheaderTextColor = const Color(0xffFFEE95);
+const kPrimary = const Color(0xff193A7A);
+const kIconColor = const Color(0xffff4676);

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-import 'homepage.dart';
-import '../util/constants.dart';
+import 'core/umPage.dart';
+//import '../util/constants.dart';
 
 class Splash extends StatefulWidget {
   Splash({Key key}) : super(key: key);
@@ -17,7 +17,7 @@ class _MyHomePageState extends State<Splash> {
     //set time to load the new page
     Future.delayed(Duration(seconds: 3), () {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => HomePage()));
+          context, MaterialPageRoute(builder: (context) => umPage()));
     });
     super.initState();
   }
