@@ -31,8 +31,8 @@ class navigationDrawer extends StatelessWidget {
                 Navigator.pushReplacementNamed(context, pageRoutes.config),
           ),
           const Divider(
-            height: 20,
-            thickness: 5,
+            height: 7,
+            thickness: 3,
             indent: 20,
             endIndent: 20,
           ),
@@ -49,8 +49,8 @@ class navigationDrawer extends StatelessWidget {
                 Navigator.pushReplacementNamed(context, pageRoutes.pnl),
           ),
           const Divider(
-            height: 20,
-            thickness: 5,
+            height: 7,
+            thickness: 3,
             indent: 20,
             endIndent: 20,
           ),
@@ -79,8 +79,8 @@ class navigationDrawer extends StatelessWidget {
                 Navigator.pushReplacementNamed(context, pageRoutes.contact),
           ),*/
           const Divider(
-            height: 20,
-            thickness: 5,
+            height: 7,
+            thickness: 3,
             indent: 20,
             endIndent: 20,
           ),
