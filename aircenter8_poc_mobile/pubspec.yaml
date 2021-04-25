@@ -30,7 +30,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   lottie: ^0.7.0+1
   giffy_dialog: ^1.6.1
-
+  timeline_tile: ^1.0.0
+  flutter_sparkline: ^0.1.0
+    
 dev_dependencies:
   flutter_test:
     sdk: flutter
