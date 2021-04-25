@@ -38,9 +38,39 @@ class navigationDrawer extends StatelessWidget {
           ),
           createDrawerBodyItem(
             icon: Icons.flight,
-            text: 'Flight Schedule',
+            text: 'Flights Schedule',
             onTap: () =>
-                Navigator.pushReplacementNamed(context, pageRoutes.schedule),
+                Navigator.pushReplacementNamed(context, pageRoutes.flights),
+          ),
+          createDrawerBodyItem(
+            icon: Icons.subtitles,
+            text: 'Passenger Name List',
+            onTap: () =>
+                Navigator.pushReplacementNamed(context, pageRoutes.pnl),
+          ),
+          const Divider(
+            height: 20,
+            thickness: 5,
+            indent: 20,
+            endIndent: 20,
+          ),
+          createDrawerBodyItem(
+            icon: Icons.hotel_outlined,
+            text: 'Hotels',
+            onTap: () =>
+                Navigator.pushReplacementNamed(context, pageRoutes.hotels),
+          ),
+          createDrawerBodyItem(
+            icon: Icons.sports,
+            text: 'Specials',
+            onTap: () =>
+                Navigator.pushReplacementNamed(context, pageRoutes.specials),
+          ),
+          createDrawerBodyItem(
+            icon: Icons.party_mode,
+            text: 'Packages',
+            onTap: () =>
+                Navigator.pushReplacementNamed(context, pageRoutes.packages),
           ),
           /*createDrawerBodyItem(
             icon: Icons.contact_phone,
@@ -48,6 +78,12 @@ class navigationDrawer extends StatelessWidget {
             onTap: () =>
                 Navigator.pushReplacementNamed(context, pageRoutes.contact),
           ),*/
+          const Divider(
+            height: 20,
+            thickness: 5,
+            indent: 20,
+            endIndent: 20,
+          ),
           ListTile(
             title: Text('About'),
             onTap: () {

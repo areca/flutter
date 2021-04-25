@@ -6,7 +6,11 @@ import 'navigation/pageRoutes.dart';
 import 'screens/core/dashboardPage.dart';
 import 'screens/core/umPage.dart';
 import 'screens/core/configPage.dart';
-import 'screens/flight/schedulePage.dart';
+import 'screens/flight/flightsPage.dart';
+import 'screens/flight/pnlPage.dart';
+import 'screens/hotel/hotelsPage.dart';
+import 'screens/hotel/specialsPage.dart';
+import 'screens/hotel/packagesPage.dart';
 
 void main() {
   runApp(MyApp());
@@ -28,7 +32,11 @@ class MyApp extends StatelessWidget {
         pageRoutes.dashboard: (context) => dashboardPage(),
         pageRoutes.um: (context) => umPage(),
         pageRoutes.config: (context) => configPage(),
-        pageRoutes.schedule: (context) => schedulePage(),
+        pageRoutes.flights: (context) => flightsPage(),
+        pageRoutes.pnl: (context) => pnlPage(),
+        pageRoutes.hotels: (context) => hotelsPage(),
+        pageRoutes.specials: (context) => specialsPage(),
+        pageRoutes.packages: (context) => packagesPage(),
       },
     );
   }
